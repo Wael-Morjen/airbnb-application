@@ -1,9 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['latin'] })
 
 import Navbar from './components/navbar/Navbar'
+import ClientOnly from './components/ClientOnly'
 
 export const metadata = {
   title: 'Airbnb',
@@ -17,8 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
+      <body className={nunito.className}>
+        <ClientOnly>
+          <Navbar/>
+        </ClientOnly>
         {children}
       </body>
     </html>
