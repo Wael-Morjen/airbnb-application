@@ -57,7 +57,7 @@ model Listing {
   guestCount Int
   locationString String
   user_id String @db.ObjectId
-  type Int
+  price Int
 
   user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
   reservations Reservation[]
