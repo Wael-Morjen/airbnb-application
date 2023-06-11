@@ -56,10 +56,10 @@ model Listing {
   bathroomCount Int
   guestCount Int
   locationString String
-  user_id String @db.ObjectId
+  userId String @db.ObjectId
   price Int
 
-  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   reservations Reservation[]
 }
 
