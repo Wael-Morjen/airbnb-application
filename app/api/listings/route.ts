@@ -42,7 +42,7 @@ export async function POST(
             guestCount,
             locationString: location.value,
             price: parseInt(price, 10),
-            user_id: currentUser.id
+            userId: currentUser.id
         }
     })
 
