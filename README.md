@@ -1,8 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a repository for a Full Stack Airbnb example with Next.js 13 App Router: React, Tailwindcss, Prisma, MongoDB, NextAuth. this project is for learning purposes and acknowledge of new technologies of web development
 
 ## Getting Started
 
-First, run the development server:
+First install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Setup .env file
+
+```bash
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_SECRET=
+```
+
+Setup Prisma
+    
+```bash
+npx prisma db push
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -11,12 +38,6 @@ yarn dev
 # or
 pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
